@@ -1,197 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KIPU FITNESS GUIDE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kipu Fitness Guide</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
+      background: #f4f4f4;
       color: #333;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-    h1, h2, h3 {
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px 10px;
       text-align: center;
-      color: #2c3e50;
     }
-    .logo {
-      width: 120px;
+    header img {
+      max-width: 120px;
       display: block;
       margin: auto;
-      border-radius: 50%;
+    }
+    main {
+      padding: 20px;
+    }
+    h2 {
+      color: #d9230f;
     }
     .section {
-      margin-bottom: 30px;
-    }
-    button {
-      background: #27ae60;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin: 10px 0;
-    }
-    button:hover {
-      background: #219150;
-    }
-    input {
-      padding: 10px;
-      width: 100%;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-    .locked {
-      display: none;
-    }
-    .note {
-      color: red;
-      text-align: center;
+      background: #fff;
       margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    ul {
-      padding-left: 20px;
+    .btn {
+      background: #d9230f;
+      color: #fff;
+      padding: 10px 20px;
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #a6170b;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://i.ibb.co/ZJzvDd0/kipulogo.jpg" alt="Kipu Fitness Logo" class="logo" />
-    <h1>KIPU FITNESS GUIDE</h1>
-    <p class="note">⚠️ Yeh course sirf un logo ke liye hai jinhone ₹99 payment kiya hai (UPI: <b>Q259634761@ybl</b>)</p>
+  <header>
+    <img src="https://i.imgur.com/4yEazYl.png" alt="Kipu Fitness Logo">
+    <h1>KIPU FITNESS COMPLETE GUIDE</h1>
+    <p>By Kipu Yadav</p>
+  </header>
+  <main>
+    <div class="section">
+      <h2>✨ Introduction</h2>
+      <p>Welcome to the KIPU FITNESS COURSE. This course is designed for people who want to gain or lose weight, get stronger, and become the best version of themselves. You'll learn everything: workouts, diet, timing, recovery, testosterone, supplements, and much more.</p>
+    </div><div class="section">
+  <h2>📅 Beginner vs Advanced Training</h2>
+  <p><strong>Beginners:</strong> Should train full body or 2 muscles per day. Example: Chest + Triceps or Back + Biceps. 3-4 times per week is enough.<br>
+  <strong>Advanced:</strong> Can isolate 1 muscle group per day. Push-Pull-Legs or Bro Split works great. 5-6 days/week for better hypertrophy.</p>
+</div>
 
-    <div id="lockSection">
-      <input type="password" id="password" placeholder="Enter Password to Unlock" />
-      <button onclick="unlock()">Unlock Guide</button>
-    </div>
+<div class="section">
+  <h2>📅 Best Time for Workouts</h2>
+  <ul>
+    <li><strong>Morning (6-8 AM):</strong> Great for cardio & fasted training.</li>
+    <li><strong>Evening (4-7 PM):</strong> Best for strength training (Testosterone peak).</li>
+    <li><strong>Night:</strong> Avoid heavy lifts. Do stretching, mobility, or walk.</li>
+  </ul>
+</div>
 
-    <div id="guide" class="locked">
-      <div class="section">
-        <h2>Introduction</h2>
-        <p>Welcome to the official KIPU FITNESS GUIDE — your ultimate resource for gaining or losing weight, building strength, understanding fitness science, and transforming your life naturally.</p>
-      </div>
+<div class="section">
+  <h2>📊 Calories & Diet Plan</h2>
+  <p><strong>Weight Gain:</strong> Eat more than TDEE (Total Daily Energy Expenditure). Add 500 calories surplus.<br>
+  <strong>Weight Loss:</strong> Eat less than TDEE. Keep 300-500 calorie deficit.<br>
+  Use calorie calculator like TDEEcalculator.net to find your needs.</p>
+</div>
 
-      <div class="section">
-        <h2>Calories Calculation</h2>
-        <p>To gain weight, eat 300–500 calories more than your maintenance level.<br>To lose weight, eat 300–500 calories less than maintenance.</p>
-        <p><b>Formula:</b> BMR x Activity Level = Maintenance Calories</p>
-      </div>
+<div class="section">
+  <h2>💼 Testosterone: Importance & Tips</h2>
+  <p>Testosterone is the male hormone responsible for muscle growth, strength, fat loss & confidence. Boost it naturally with proper sleep, weight training, and healthy fats (like nuts, eggs, avocados).</p>
+</div>
 
-      <div class="section">
-        <h2>🏋️ Gym Workout Plan (Choose Any 5 Daily)</h2>
-        <ul>
-          <li>Bench Press – 4 sets x 8-10 reps</li>
-          <li>Incline Dumbbell Press – 4 x 10</li>
-          <li>Shoulder Press – 4 x 10</li>
-          <li>Deadlift – 3 x 6 (Heavy)</li>
-          <li>Lat Pulldown – 4 x 12</li>
-          <li>Barbell Row – 4 x 10</li>
-          <li>Bicep Curl – 4 x 12</li>
-          <li>Tricep Pushdown – 4 x 12</li>
-          <li>Leg Press – 4 x 12</li>
-          <li>Squats – 4 x 8 (Training to failure)</li>
-        </ul>
-      </div>
+<div class="section">
+  <h2>🪤 Masturbation & Fitness</h2>
+  <p>Once a month is normal. Avoid frequent masturbation as it may lower testosterone and energy. Focus your energy on workouts, discipline, and goals.</p>
+</div>
 
-      <div class="section">
-        <h2>🏠 Home Workout Plan (Choose Any 5 Daily)</h2>
-        <ul>
-          <li>Push-ups – 4 sets to failure</li>
-          <li>Pull-ups – 3 x max reps</li>
-          <li>Plank – 3 x 1 min</li>
-          <li>Jump Squats – 4 x 15</li>
-          <li>Mountain Climbers – 4 x 30 sec</li>
-          <li>Burpees – 3 x 15</li>
-          <li>Dips (Chair) – 4 x 12</li>
-          <li>Wall Sit – 3 x 1 min</li>
-          <li>Lunges – 4 x 12/leg</li>
-          <li>Crunches – 4 x 20</li>
-        </ul>
-      </div>
+<div class="section">
+  <h2>🏋️‍♂️ Home Workout (Do any 5 out of 10)</h2>
+  <ul>
+    <li>Push-ups</li>
+    <li>Bodyweight Squats</li>
+    <li>Jumping Jacks</li>
+    <li>Plank</li>
+    <li>Crunches</li>
+    <li>Mountain Climbers</li>
+    <li>Wall Sit</li>
+    <li>High Knees</li>
+    <li>Lunges</li>
+    <li>Burpees</li>
+  </ul>
+  <p><strong>Sets:</strong> 3 <strong>Reps:</strong> 12-20 or till failure</p>
+</div>
 
-      <div class="section">
-        <h2>💪 Weight Gain Diet</h2>
-        <ul>
-          <li>Breakfast: 4 Boiled Eggs + 4 Bread + Peanut Butter</li>
-          <li>Mid-morning: Banana Shake + Dry Fruits</li>
-          <li>Lunch: 2-3 Roti + Rice + Paneer/Tofu + Veg</li>
-          <li>Evening Snack: Whey Protein + Banana</li>
-          <li>Dinner: 3 Roti + Dal + Veg + Salad</li>
-        </ul>
-      </div>
+<div class="section">
+  <h2>🏋️‍♀️ Gym Workout (Do 5 from each category)</h2>
+  <h3>Chest</h3>
+  <ul>
+    <li>Flat Bench Press</li>
+    <li>Incline Press</li>
+    <li>Cable Fly</li>
+    <li>Decline Press</li>
+    <li>Push-ups</li>
+    <li>Dumbbell Fly</li>
+    <li>Chest Dips</li>
+    <li>Pec Deck</li>
+    <li>Hammer Strength</li>
+    <li>Landmine Press</li>
+  </ul>
+  <p><strong>Sets:</strong> 4 <strong>Reps:</strong> 8-12 | Train till near failure.</p>
+  <!-- Repeat for other muscles -->
+</div>
 
-      <div class="section">
-        <h2>🔥 Weight Loss Diet</h2>
-        <ul>
-          <li>Breakfast: Oats + Fruits</li>
-          <li>Mid-morning: Green Tea + 1 Fruit</li>
-          <li>Lunch: 2 Roti + Veg + Dal (No Rice)</li>
-          <li>Snack: Boiled Chana + Black Coffee</li>
-          <li>Dinner: Salad + Paneer/Tofu</li>
-        </ul>
-      </div>
+<div class="section">
+  <h2>🍽️ Supplements Knowledge</h2>
+  <ul>
+    <li><strong>Whey Protein:</strong> For post workout muscle recovery</li>
+    <li><strong>Creatine Monohydrate:</strong> For strength & size</li>
+    <li><strong>Multivitamins:</strong> For overall health</li>
+    <li><strong>Omega 3:</strong> For brain and joints</li>
+    <li><strong>Mass Gainer:</strong> For ectomorphs to gain weight</li>
+  </ul>
+</div>
 
-      <div class="section">
-        <h2>⚡ Supplements Guide</h2>
-        <ul>
-          <li><b>Whey Protein:</b> Muscle recovery & growth. Take 1 scoop post workout.</li>
-          <li><b>Creatine:</b> Increases strength & endurance. 5g daily with water.</li>
-          <li><b>Multivitamins:</b> Supports overall health.</li>
-          <li><b>Fish Oil:</b> Good for joints and brain.</li>
-        </ul>
-      </div>
+<div class="section">
+  <h2>📄 Fitness Tablets Info</h2>
+  <ul>
+    <li><strong>Ashwagandha Tablets:</strong> Reduces stress, boosts test.</li>
+    <li><strong>Vitamin D3:</strong> Essential for test and bones.</li>
+    <li><strong>Zinc Tablets:</strong> Boosts immunity, supports hormones.</li>
+    <li><strong>BCAA Tablets:</strong> Prevents muscle breakdown (during workout)</li>
+  </ul>
+</div>
 
-      <div class="section">
-        <h2>🧬 Testosterone Explained</h2>
-        <p>Testosterone is a key hormone responsible for muscle growth, energy, fat loss & sex drive. Low levels can cause fatigue & low motivation.</p>
-        <ul>
-          <li>Sleep 7-9 hrs daily</li>
-          <li>Lift heavy weights</li>
-          <li>Reduce stress & sugar</li>
-          <li>Eat healthy fats (nuts, seeds)</li>
-        </ul>
-      </div>
+<div class="section">
+  <h2>💾 Download as PDF</h2>
+  <p>Click below to download this guide for offline use:</p>
+  <a href="#" class="btn" onclick="downloadPDF()">Download PDF</a>
+</div>
 
-      <div class="section">
-        <h2>❗ Masturbation & Fitness</h2>
-        <p>Normal level of masturbation does NOT affect your fitness. If done in limit, it's okay.</p>
-        <p><b>1 month me ek baar karna bilkul normal hai</b>. Isse testosterone ya strength pe koi major farak nahi padta.</p>
-      </div>
-
-      <div class="section" style="text-align:center;">
-        <button onclick="downloadPDF()">📥 Download as PDF</button>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    function unlock() {
-      var pwd = document.getElementById("password").value;
-      if(pwd === "FITWITHKIPU"){
-        document.getElementById("guide").style.display = "block";
-        document.getElementById("lockSection").style.display = "none";
-      } else {
-        alert("Incorrect password! Please pay ₹99 to get access.");
-      }
-    }
-
+  </main>  <script>
     function downloadPDF() {
-      const element = document.querySelector(".container");
-      html2pdf().from(element).save("Kipu_Fitness_Guide.pdf");
+      const element = document.body;
+      const opt = {
+        margin:       0.5,
+        filename:     'Kipu_Fitness_Guide.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+      html2pdf().from(element).set(opt).save();
     }
-  </script>
-  <script src="https://rawcdn.githack.com/eKoopmans/html2pdf/0.9.2/dist/html2pdf.bundle.js"></script>
-</body>
+  </script>  <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script></body>
 </html>
