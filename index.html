@@ -1,128 +1,186 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kipu Fitness</title>
+  <title>KIPU FITNESS GUIDE</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #111, #1a1a1a);
+      color: #fff;
       margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #1e1e2f;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-    }
-    h2 {
-      color: #007BFF;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
-    ul {
-      list-style-type: none;
       padding: 0;
     }
-    ul li::before {
-      content: "➡️ ";
+    header {
+      background: linear-gradient(to right, #ff4b2b, #ff416c);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
     }
     section {
-      margin-bottom: 40px;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #1f1f1f;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #000;
     }
-    .note {
-      background: #ffeeba;
-      padding: 10px;
-      border-left: 5px solid #ffc107;
-      margin-top: 20px;
-      border-radius: 5px;
+    h2 {
+      color: #ff416c;
+      margin-top: 2rem;
     }
-    .upi-box {
-      background: #d1e7dd;
-      padding: 10px;
-      margin-top: 30px;
-      text-align: center;
+    input[type="file"], input[type="password"] {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
+    }
+    button {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      background: #ff416c;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e2335e;
+    }
+    .hidden {
+      display: none;
+    }
+    .insta a {
+      color: #ff416c;
+      text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
     }
-    img.logo {
-      max-width: 150px;
-      display: block;
-      margin: 20px auto;
+    .guide-content {
+      margin-top: 2rem;
+      line-height: 1.6;
+    }
+    ul {
+      margin-left: 1rem;
     }
     @media (max-width: 600px) {
-      body {
-        padding: 10px;
+      header h1 {
+        font-size: 2rem;
       }
-      .container {
-        margin: 10px;
-        padding: 15px;
+      section {
+        margin: 1rem;
+        padding: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Kipu Fitness</h1>
-    <p>Your Guide to Gaining or Losing Weight</p>
-  </header>
 
-  <div class="container">
-    <section>
-      <h2>💪 Weight Gain Chart</h2>
+<header>
+  <h1>🏋️‍♂️ KIPU FITNESS GUIDE</h1>
+</header>
+
+<section>
+  <h2>💸 Step 1: Pay ₹99</h2>
+  <p><strong>UPI ID:</strong> <span style="color: #0f0;">Q259634761@ybl</span></p>
+  <p>Payment ke baad screenshot upload karein:</p>
+  <input type="file" accept="image/*" />
+
+  <h2>🔐 Step 2: Enter Password (after approval)</h2>
+  <input type="password" id="password" placeholder="Enter Password" />
+  <button onclick="checkPassword()">Unlock Guide</button>
+  <p id="wrong" style="color: red; display: none;">❌ Wrong password, try again.</p>
+
+  <div class="hidden" id="guide">
+    <div class="guide-content">
+      <h2>📘 Introduction</h2>
+      <p>KIPU Fitness Guide aapko ek structured plan deta hai jisse aap weight gain, fat loss, aur muscle building jaise goals achieve kar sakte ho. Chahe aap gym jaate ho ya ghar pe workout karte ho, ye guide sab ke liye hai.</p>
+
+      <h2>💪 Benefits of Fitness</h2>
       <ul>
-        <li><strong>Morning Exercise:</strong> Stretching, Warmup, Running</li>
-        <li><strong>Morning Diet:</strong> 4 Soaked Almonds, Soaked Chickpeas and Moong, 50gm Oats + Milk</li>
-        <li><strong>Mid Day Meal:</strong> Salad, 2 Boiled Potatoes</li>
-        <li><strong>Lunch:</strong> 4 Roti + Any Veg</li>
-        <li><strong>Pre Workout:</strong> 1 Banana</li>
-        <li><strong>Post Workout:</strong> Creatine, Banana Shake</li>
-        <li><strong>Dinner:</strong> 2 Roti + Any Veg</li>
-        <li><strong>Before Bed:</strong> 1 Glass Warm Milk with Turmeric and 1 tsp Desi Ghee</li>
+        <li>Energy levels badhta hai</li>
+        <li>Immunity improve hoti hai</li>
+        <li>Muscle growth aur fat loss</li>
+        <li>Self-confidence boost</li>
       </ul>
-    </section>
 
-    <section>
-      <h2>🔥 Weight Loss Chart</h2>
+      <h2>🍽️ Weight Gain Diet Plan (Veg)</h2>
       <ul>
-        <li><strong>Morning Exercise:</strong> Stretching, Warmup, Running</li>
-        <li><strong>Morning Diet:</strong> 4 Soaked Almonds, Soaked Chickpeas and Moong, 50gm Oats + Milk</li>
-        <li><strong>Mid Day Meal:</strong> Salad</li>
-        <li><strong>Lunch:</strong> 2 Roti + Any Veg</li>
-        <li><strong>Pre Workout:</strong> 1 Banana</li>
-        <li><strong>Post Workout:</strong> Banana Shake</li>
-        <li><strong>Dinner:</strong> 1 Roti + Any Veg</li>
-        <li><strong>Before Bed:</strong> 1 Glass Warm Milk with Turmeric and 1 tsp Desi Ghee</li>
+        <li>Morning: Banana + soaked almonds + milk + whey protein</li>
+        <li>Breakfast: Paratha + curd + 4 boiled eggs (paneer if veg)</li>
+        <li>Lunch: Rice + dal + sabzi + 100g paneer</li>
+        <li>Pre-Workout: Banana + peanut butter toast</li>
+        <li>Post-Workout: Whey protein + 1 banana</li>
+        <li>Dinner: Chapati + paneer sabzi + salad</li>
+        <li>Before bed: Milk + dry fruits</li>
       </ul>
-    </section>
 
-    <div class="note">
-      <strong>Don't Forget:</strong>
+      <h2>🏠 Home Workout (No Equipment)</h2>
       <ul>
-        <li>No Masturbation</li>
-        <li>No Porn</li>
-        <li>No Fast Food</li>
-        <li>Drink 4 Litres of Water Daily</li>
+        <li>Push-ups – 3 x 15</li>
+        <li>Squats – 3 x 20</li>
+        <li>Plank – 3 x 30 sec</li>
+        <li>Lunges – 3 x 12 each leg</li>
+        <li>Mountain climbers – 3 x 20</li>
       </ul>
-    </div>
 
-    <div class="upi-box">
-      💰 Pay via UPI: <br />
-      <code>kripalsultania@ybl</code>
+      <h2>🏋️ Gym Workout Plan</h2>
+      <ul>
+        <li><strong>Day 1 – Chest + Triceps</strong>: Bench Press, Cable Fly, Tricep Pushdown</li>
+        <li><strong>Day 2 – Back + Biceps</strong>: Lat Pulldown, Barbell Row, Dumbbell Curl</li>
+        <li><strong>Day 3 – Legs</strong>: Squats, Leg Press, Calf Raises</li>
+        <li><strong>Day 4 – Shoulders</strong>: Shoulder Press, Lateral Raise, Shrugs</li>
+        <li><strong>Day 5 – Arms</strong>: Bicep Curl, Tricep Dips, Hammer Curl</li>
+        <li><strong>Day 6 – Abs + Cardio</strong>: Crunches, Plank, Leg Raise</li>
+        <li><strong>Day 7 – Rest</strong></li>
+      </ul>
+
+      <h2>⚖️ Weight Loss Diet (Veg)</h2>
+      <ul>
+        <li>Morning: Warm water + lemon + soaked almonds</li>
+        <li>Breakfast: Oats + fruits + black coffee</li>
+        <li>Lunch: 2 chapati + sabzi + dal + salad</li>
+        <li>Snack: Roasted chana or fruit</li>
+        <li>Dinner: Veg soup + salad or 1 chapati + sabzi</li>
+      </ul>
+
+      <p style="margin-top: 2rem;">🚀 Stay consistent, stay strong. #FitWithKipu 💪</p>
     </div>
   </div>
+
+  <div class="insta">
+    <p>📸 Follow us on Instagram: 
+      <a href="https://instagram.com/kripalsultania" target="_blank">@kripalsultania</a>
+    </p>
+  </div>
+</section>
+
+<script>
+  const correctPassword = "FITWITHKIPU";
+
+  function checkPassword() {
+    const input = document.getElementById("password").value;
+    const guide = document.getElementById("guide");
+    const wrong = document.getElementById("wrong");
+
+    if (input === correctPassword) {
+      guide.classList.remove("hidden");
+      wrong.style.display = "none";
+    } else {
+      wrong.style.display = "block";
+      guide.classList.add("hidden");
+    }
+  }
+</script>
+
 </body>
 </html>
