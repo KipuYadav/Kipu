@@ -1,142 +1,208 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kipu Fitness Guide Course</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KIPU FITNESS COURSE</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #222;
     }
     header {
       background: #111;
-      color: white;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
     header img {
       height: 60px;
     }
-    main {
-      padding: 20px;
-      max-width: 900px;
+    .container {
+      max-width: 800px;
       margin: auto;
-      background: white;
-      border-radius: 8px;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    h1, h2, h3 {
-      color: #1e88e5;
+    h2 {
+      color: #e91e63;
     }
-    section {
-      margin-bottom: 30px;
+    .lock {
+      display: none;
+    }
+    .show {
+      display: block !important;
+    }
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      width: 100%;
     }
     button {
-      background: #1e88e5;
-      color: white;
       padding: 10px 20px;
+      background: #e91e63;
+      color: white;
       border: none;
-      border-radius: 5px;
       cursor: pointer;
-      font-size: 16px;
+      margin-top: 10px;
     }
     button:hover {
-      background: #1565c0;
+      background: #d81b60;
+    }
+    .note {
+      background: #ffeb3b;
+      padding: 10px;
+      margin-bottom: 20px;
     }
     .download {
+      margin: 20px 0;
       text-align: center;
-      margin-top: 20px;
+    }
+    .download button {
+      background: #4caf50;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #999;
+      margin: 30px 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="kipu-logo.png" alt="Kipu Fitness Logo">
-    <h1>KIPU FITNESS COMPLETE GUIDE</h1>
-    <p>By Kipu Sultania</p>
+    <img src="https://i.imgur.com/5RHR6Ku.png" alt="Kipu Logo">
+    <h1>KIPU FITNESS MASTER COURSE</h1>
   </header>
-  <main><section>
-  <h2>1. Introduction</h2>
-  <p>Welcome to the Kipu Fitness Course – your complete fitness education covering workouts, diet, calories, supplements, and even lifestyle topics. This course is designed for all individuals looking to transform their health, gain or lose weight, and understand the real science behind fitness.</p>
-</section>
 
-<section>
-  <h2>2. How to Calculate Calories</h2>
-  <p>To gain or lose weight, calories are key. Use this simple formula to find your Total Daily Energy Expenditure (TDEE):</p>
-  <ul>
-    <li>For Men: <b>TDEE = (10 × weight in kg) + (6.25 × height in cm) – (5 × age) + 5</b></li>
-    <li>To Gain Weight: Add 300–500 kcal/day</li>
-    <li>To Lose Weight: Subtract 300–500 kcal/day</li>
-  </ul>
-</section>
+  <div class="container">
+    <div class="note">
+      💸 <b>Note:</b> Ye course sirf unke liye hai jinhone ₹99 payment kiya ho.<br>
+      UPI ID: <b>Q259634761@ybl</b><br>
+      Payment ke baad WhatsApp par screenshot bhejein aur password lein.
+    </div>
 
-<section>
-  <h2>3. Masturbation and Fitness</h2>
-  <p>Masturbation in moderation doesn't harm fitness. Excessive masturbation may lead to fatigue, focus issues, and reduced motivation. Prioritize sleep, hydration, and balance. It’s mental strength and consistency that drive progress — not minor lifestyle habits.</p>
-</section>
+    <div id="password-section">
+      <input type="password" id="pass" placeholder="Enter Password">
+      <button onclick="checkPass()">Unlock Course</button>
+    </div>
 
-<section>
-  <h2>4. Home Workout Plan</h2>
-  <ul>
-    <li><b>Day 1 (Full Body)</b>: Push-ups 3×15, Squats 3×20, Planks 3×30 sec</li>
-    <li><b>Day 2 (Upper)</b>: Dips 3×15, Pull-ups 3×10, Shoulder taps 3×20</li>
-    <li><b>Day 3 (Core)</b>: Crunches 3×20, Leg raises 3×15, Mountain climbers 3×30 sec</li>
-    <li>Repeat weekly. Rest on Sundays.</li>
-  </ul>
-</section>
+    <div id="course" class="lock">
+      <h2>📚 Course Content</h2>
 
-<section>
-  <h2>5. Gym Workout Plan</h2>
-  <ul>
-    <li><b>Monday:</b> Chest + Triceps (Bench press, Pushdowns – 4 sets each)</li>
-    <li><b>Tuesday:</b> Back + Biceps (Deadlift, Barbell rows, Bicep curls – 4 sets)</li>
-    <li><b>Wednesday:</b> Legs (Squats, Leg Press, Lunges – 4 sets)</li>
-    <li><b>Thursday:</b> Shoulders (Overhead press, Lateral raises – 4 sets)</li>
-    <li><b>Friday:</b> Arms + Abs</li>
-    <li><b>Saturday:</b> Cardio/Stretch</li>
-  </ul>
-</section>
+      <h3>1. Introduction</h3>
+      <p>Welcome to the KIPU FITNESS MASTER GUIDE. Yeh course aapko fitness ke har essential aspect — diet, workout, recovery, aur motivation — sab kuch sikhayega.</p>
 
-<section>
-  <h2>6. Diet Plan</h2>
-  <h3>For Weight Gain</h3>
-  <ul>
-    <li>Morning: Banana + Peanut Butter + Milk</li>
-    <li>Mid-morning: Paneer + Roti</li>
-    <li>Lunch: Rice + Dal + Veg + Salad</li>
-    <li>Evening: Whey Protein + Almonds</li>
-    <li>Dinner: Chicken/Fish + Rice/Chapati</li>
-  </ul>
-  <h3>For Weight Loss</h3>
-  <ul>
-    <li>Morning: Green tea + Oats</li>
-    <li>Mid-morning: Fruits</li>
-    <li>Lunch: Brown rice + Sabzi + Dal</li>
-    <li>Evening: Black coffee + Boiled egg</li>
-    <li>Dinner: Soup + Grilled paneer</li>
-  </ul>
-</section>
+      <h3>2. Calories kaise nikaale?</h3>
+      <ul>
+        <li>Step 1: Apna BMR nikaalein — (10×weight) + (6.25×height) − (5×age) + 5</li>
+        <li>Step 2: Multiply with activity level (1.2 to 1.7)</li>
+        <li>Step 3: <b>Weight Gain:</b> 300–500 calories surplus</li>
+        <li>Step 4: <b>Weight Loss:</b> 300–500 calories deficit</li>
+      </ul>
 
-<section>
-  <h2>7. Supplement Guide</h2>
-  <ul>
-    <li><b>Whey Protein:</b> Best post-workout, 1 scoop = ~25g protein. Fast digesting.</li>
-    <li><b>Creatine:</b> 5g daily, helps with strength & size. Safe long-term.</li>
-    <li><b>Mass Gainer:</b> Use if you can't meet calorie needs with food.</li>
-    <li><b>Multivitamins:</b> Helps fill nutritional gaps.</li>
-    <li><b>Pre-workout:</b> Increases energy. Don’t overuse (1 scoop max).</li>
-    <li><b>BCAA:</b> Not essential if you're eating enough protein.</li>
-    <li><b>Advice:</b> No supplement replaces real food. Use smartly & consistently.</li>
-  </ul>
-</section>
+      <h3>3. Diet Plans</h3>
+      <b>Weight Gain (Veg):</b>
+      <ul>
+        <li>Breakfast: 4 boiled eggs, oats, banana shake</li>
+        <li>Lunch: Rice, 2 chapati, dal, paneer</li>
+        <li>Snack: Peanut butter + banana</li>
+        <li>Dinner: Sabzi + Rice + Salad</li>
+      </ul>
 
-<div class="download">
-  <h3>📥 Download Full Guide as PDF</h3>
-  <a href="kipu_fitness_guide.pdf" download><button>Download PDF</button></a>
-</div>
+      <b>Weight Loss (Veg):</b>
+      <ul>
+        <li>Breakfast: Green tea + oats + apple</li>
+        <li>Lunch: 1 chapati + sabzi + salad</li>
+        <li>Dinner: 1 bowl soup + boiled veggies</li>
+      </ul>
 
-  </main>
+      <h3>4. Home Workouts</h3>
+      <ul>
+        <li>Pushups – 4 sets x max reps (to failure)</li>
+        <li>Bodyweight Squats – 4 sets x 20 reps</li>
+        <li>Plank – 3 sets x 60 sec</li>
+        <li>Burpees – 3 sets x 12 reps</li>
+      </ul>
+
+      <h3>5. Gym Workouts</h3>
+      <b>Day 1 – Chest:</b>
+      <ul>
+        <li>Bench Press – 4x10 (last set to failure)</li>
+        <li>Incline Dumbbell – 3x10</li>
+        <li>Cable Fly – 3x15</li>
+      </ul>
+
+      <b>Day 2 – Back:</b>
+      <ul>
+        <li>Deadlift – 4x8 (heavy)</li>
+        <li>Lat Pulldown – 3x12</li>
+        <li>Seated Row – 3x10</li>
+      </ul>
+
+      <b>Day 3 – Shoulders:</b>
+      <ul>
+        <li>Military Press – 4x10</li>
+        <li>Side Raises – 3x12</li>
+        <li>Reverse Pec Deck – 3x15</li>
+      </ul>
+
+      <b>Day 4 – Arms:</b>
+      <ul>
+        <li>Barbell Curl – 3x12</li>
+        <li>Tricep Pushdown – 3x12</li>
+        <li>Hammer Curl – 3x10</li>
+      </ul>
+
+      <b>Day 5 – Legs:</b>
+      <ul>
+        <li>Squats – 4x12 (to failure on last)</li>
+        <li>Leg Press – 3x15</li>
+        <li>Calf Raise – 4x20</li>
+      </ul>
+
+      <h3>6. Supplements Guide</h3>
+      <ul>
+        <li><b>Whey Protein:</b> Muscle recovery, post-workout (1 scoop daily)</li>
+        <li><b>Creatine:</b> Strength, 5g daily with water (anytime)</li>
+        <li><b>Multivitamin:</b> Daily general health</li>
+        <li><b>Fish Oil:</b> For joints, heart, brain</li>
+      </ul>
+
+      <h3>7. Masturbation aur Fitness</h3>
+      <p>Week me 1-2 baar masturbation normal hai. Excess se fatigue, focus loss, dopamine crash ho sakta hai. Fitness pe tabhi impact padta hai jab overdo ho jaye.</p>
+
+      <div class="download">
+        <button onclick="generatePDF()">📥 Download PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 KIPU FITNESS. All Rights Reserved.</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    function checkPass() {
+      const input = document.getElementById("pass").value;
+      if(input === "FITWITHKIPU") {
+        document.getElementById("course").classList.add("show");
+        document.getElementById("password-section").style.display = "none";
+      } else {
+        alert("Wrong password! Pay ₹99 to get the password.");
+      }
+    }
+
+    async function generatePDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      doc.text("KIPU FITNESS MASTER COURSE", 10, 10);
+      doc.text("Visit site for full content", 10, 20);
+      doc.save("KipuFitnessGuide.pdf");
+    }
+  </script>
 </body>
 </html>
