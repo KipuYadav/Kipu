@@ -3,206 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KIPU FITNESS COURSE</title>
+  <title>KIPU FITNESS GUIDE</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f2f2f2;
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
       margin: 0;
       padding: 0;
-    }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      height: 60px;
+      color: #333;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      background: #fff;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
-    h2 {
-      color: #e91e63;
+    h1, h2, h3 {
+      text-align: center;
+      color: #2c3e50;
     }
-    .lock {
-      display: none;
+    .logo {
+      width: 120px;
+      display: block;
+      margin: auto;
+      border-radius: 50%;
     }
-    .show {
-      display: block !important;
-    }
-    input[type="password"] {
-      padding: 10px;
-      font-size: 16px;
-      margin-bottom: 10px;
-      width: 100%;
+    .section {
+      margin-bottom: 30px;
     }
     button {
-      padding: 10px 20px;
-      background: #e91e63;
+      background: #27ae60;
       color: white;
+      padding: 10px 20px;
       border: none;
+      border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
-      margin-top: 10px;
+      margin: 10px 0;
     }
     button:hover {
-      background: #d81b60;
+      background: #219150;
+    }
+    input {
+      padding: 10px;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .locked {
+      display: none;
     }
     .note {
-      background: #ffeb3b;
-      padding: 10px;
+      color: red;
+      text-align: center;
       margin-bottom: 20px;
     }
-    .download {
-      margin: 20px 0;
-      text-align: center;
-    }
-    .download button {
-      background: #4caf50;
-    }
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #999;
-      margin: 30px 0;
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://i.imgur.com/5RHR6Ku.png" alt="Kipu Logo">
-    <h1>KIPU FITNESS MASTER COURSE</h1>
-  </header>
-
   <div class="container">
-    <div class="note">
-      💸 <b>Note:</b> Ye course sirf unke liye hai jinhone ₹99 payment kiya ho.<br>
-      UPI ID: <b>Q259634761@ybl</b><br>
-      Payment ke baad WhatsApp par screenshot bhejein aur password lein.
+    <img src="https://i.ibb.co/ZJzvDd0/kipulogo.jpg" alt="Kipu Fitness Logo" class="logo" />
+    <h1>KIPU FITNESS GUIDE</h1>
+    <p class="note">⚠️ Yeh course sirf un logo ke liye hai jinhone ₹99 payment kiya hai (UPI: <b>Q259634761@ybl</b>)</p>
+
+    <div id="lockSection">
+      <input type="password" id="password" placeholder="Enter Password to Unlock" />
+      <button onclick="unlock()">Unlock Guide</button>
     </div>
 
-    <div id="password-section">
-      <input type="password" id="pass" placeholder="Enter Password">
-      <button onclick="checkPass()">Unlock Course</button>
-    </div>
+    <div id="guide" class="locked">
+      <div class="section">
+        <h2>Introduction</h2>
+        <p>Welcome to the official KIPU FITNESS GUIDE — your ultimate resource for gaining or losing weight, building strength, understanding fitness science, and transforming your life naturally.</p>
+      </div>
 
-    <div id="course" class="lock">
-      <h2>📚 Course Content</h2>
+      <div class="section">
+        <h2>Calories Calculation</h2>
+        <p>To gain weight, eat 300–500 calories more than your maintenance level.<br>To lose weight, eat 300–500 calories less than maintenance.</p>
+        <p><b>Formula:</b> BMR x Activity Level = Maintenance Calories</p>
+      </div>
 
-      <h3>1. Introduction</h3>
-      <p>Welcome to the KIPU FITNESS MASTER GUIDE. Yeh course aapko fitness ke har essential aspect — diet, workout, recovery, aur motivation — sab kuch sikhayega.</p>
+      <div class="section">
+        <h2>🏋️ Gym Workout Plan (Choose Any 5 Daily)</h2>
+        <ul>
+          <li>Bench Press – 4 sets x 8-10 reps</li>
+          <li>Incline Dumbbell Press – 4 x 10</li>
+          <li>Shoulder Press – 4 x 10</li>
+          <li>Deadlift – 3 x 6 (Heavy)</li>
+          <li>Lat Pulldown – 4 x 12</li>
+          <li>Barbell Row – 4 x 10</li>
+          <li>Bicep Curl – 4 x 12</li>
+          <li>Tricep Pushdown – 4 x 12</li>
+          <li>Leg Press – 4 x 12</li>
+          <li>Squats – 4 x 8 (Training to failure)</li>
+        </ul>
+      </div>
 
-      <h3>2. Calories kaise nikaale?</h3>
-      <ul>
-        <li>Step 1: Apna BMR nikaalein — (10×weight) + (6.25×height) − (5×age) + 5</li>
-        <li>Step 2: Multiply with activity level (1.2 to 1.7)</li>
-        <li>Step 3: <b>Weight Gain:</b> 300–500 calories surplus</li>
-        <li>Step 4: <b>Weight Loss:</b> 300–500 calories deficit</li>
-      </ul>
+      <div class="section">
+        <h2>🏠 Home Workout Plan (Choose Any 5 Daily)</h2>
+        <ul>
+          <li>Push-ups – 4 sets to failure</li>
+          <li>Pull-ups – 3 x max reps</li>
+          <li>Plank – 3 x 1 min</li>
+          <li>Jump Squats – 4 x 15</li>
+          <li>Mountain Climbers – 4 x 30 sec</li>
+          <li>Burpees – 3 x 15</li>
+          <li>Dips (Chair) – 4 x 12</li>
+          <li>Wall Sit – 3 x 1 min</li>
+          <li>Lunges – 4 x 12/leg</li>
+          <li>Crunches – 4 x 20</li>
+        </ul>
+      </div>
 
-      <h3>3. Diet Plans</h3>
-      <b>Weight Gain (Veg):</b>
-      <ul>
-        <li>Breakfast: 4 boiled eggs, oats, banana shake</li>
-        <li>Lunch: Rice, 2 chapati, dal, paneer</li>
-        <li>Snack: Peanut butter + banana</li>
-        <li>Dinner: Sabzi + Rice + Salad</li>
-      </ul>
+      <div class="section">
+        <h2>💪 Weight Gain Diet</h2>
+        <ul>
+          <li>Breakfast: 4 Boiled Eggs + 4 Bread + Peanut Butter</li>
+          <li>Mid-morning: Banana Shake + Dry Fruits</li>
+          <li>Lunch: 2-3 Roti + Rice + Paneer/Tofu + Veg</li>
+          <li>Evening Snack: Whey Protein + Banana</li>
+          <li>Dinner: 3 Roti + Dal + Veg + Salad</li>
+        </ul>
+      </div>
 
-      <b>Weight Loss (Veg):</b>
-      <ul>
-        <li>Breakfast: Green tea + oats + apple</li>
-        <li>Lunch: 1 chapati + sabzi + salad</li>
-        <li>Dinner: 1 bowl soup + boiled veggies</li>
-      </ul>
+      <div class="section">
+        <h2>🔥 Weight Loss Diet</h2>
+        <ul>
+          <li>Breakfast: Oats + Fruits</li>
+          <li>Mid-morning: Green Tea + 1 Fruit</li>
+          <li>Lunch: 2 Roti + Veg + Dal (No Rice)</li>
+          <li>Snack: Boiled Chana + Black Coffee</li>
+          <li>Dinner: Salad + Paneer/Tofu</li>
+        </ul>
+      </div>
 
-      <h3>4. Home Workouts</h3>
-      <ul>
-        <li>Pushups – 4 sets x max reps (to failure)</li>
-        <li>Bodyweight Squats – 4 sets x 20 reps</li>
-        <li>Plank – 3 sets x 60 sec</li>
-        <li>Burpees – 3 sets x 12 reps</li>
-      </ul>
+      <div class="section">
+        <h2>⚡ Supplements Guide</h2>
+        <ul>
+          <li><b>Whey Protein:</b> Muscle recovery & growth. Take 1 scoop post workout.</li>
+          <li><b>Creatine:</b> Increases strength & endurance. 5g daily with water.</li>
+          <li><b>Multivitamins:</b> Supports overall health.</li>
+          <li><b>Fish Oil:</b> Good for joints and brain.</li>
+        </ul>
+      </div>
 
-      <h3>5. Gym Workouts</h3>
-      <b>Day 1 – Chest:</b>
-      <ul>
-        <li>Bench Press – 4x10 (last set to failure)</li>
-        <li>Incline Dumbbell – 3x10</li>
-        <li>Cable Fly – 3x15</li>
-      </ul>
+      <div class="section">
+        <h2>🧬 Testosterone Explained</h2>
+        <p>Testosterone is a key hormone responsible for muscle growth, energy, fat loss & sex drive. Low levels can cause fatigue & low motivation.</p>
+        <ul>
+          <li>Sleep 7-9 hrs daily</li>
+          <li>Lift heavy weights</li>
+          <li>Reduce stress & sugar</li>
+          <li>Eat healthy fats (nuts, seeds)</li>
+        </ul>
+      </div>
 
-      <b>Day 2 – Back:</b>
-      <ul>
-        <li>Deadlift – 4x8 (heavy)</li>
-        <li>Lat Pulldown – 3x12</li>
-        <li>Seated Row – 3x10</li>
-      </ul>
+      <div class="section">
+        <h2>❗ Masturbation & Fitness</h2>
+        <p>Normal level of masturbation does NOT affect your fitness. If done in limit, it's okay.</p>
+        <p><b>1 month me ek baar karna bilkul normal hai</b>. Isse testosterone ya strength pe koi major farak nahi padta.</p>
+      </div>
 
-      <b>Day 3 – Shoulders:</b>
-      <ul>
-        <li>Military Press – 4x10</li>
-        <li>Side Raises – 3x12</li>
-        <li>Reverse Pec Deck – 3x15</li>
-      </ul>
-
-      <b>Day 4 – Arms:</b>
-      <ul>
-        <li>Barbell Curl – 3x12</li>
-        <li>Tricep Pushdown – 3x12</li>
-        <li>Hammer Curl – 3x10</li>
-      </ul>
-
-      <b>Day 5 – Legs:</b>
-      <ul>
-        <li>Squats – 4x12 (to failure on last)</li>
-        <li>Leg Press – 3x15</li>
-        <li>Calf Raise – 4x20</li>
-      </ul>
-
-      <h3>6. Supplements Guide</h3>
-      <ul>
-        <li><b>Whey Protein:</b> Muscle recovery, post-workout (1 scoop daily)</li>
-        <li><b>Creatine:</b> Strength, 5g daily with water (anytime)</li>
-        <li><b>Multivitamin:</b> Daily general health</li>
-        <li><b>Fish Oil:</b> For joints, heart, brain</li>
-      </ul>
-
-      <h3>7. Masturbation aur Fitness</h3>
-      <p>Week me 1-2 baar masturbation normal hai. Excess se fatigue, focus loss, dopamine crash ho sakta hai. Fitness pe tabhi impact padta hai jab overdo ho jaye.</p>
-
-      <div class="download">
-        <button onclick="generatePDF()">📥 Download PDF</button>
+      <div class="section" style="text-align:center;">
+        <button onclick="downloadPDF()">📥 Download as PDF</button>
       </div>
     </div>
   </div>
 
-  <footer>© 2025 KIPU FITNESS. All Rights Reserved.</footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script>
-    function checkPass() {
-      const input = document.getElementById("pass").value;
-      if(input === "FITWITHKIPU") {
-        document.getElementById("course").classList.add("show");
-        document.getElementById("password-section").style.display = "none";
+    function unlock() {
+      var pwd = document.getElementById("password").value;
+      if(pwd === "FITWITHKIPU"){
+        document.getElementById("guide").style.display = "block";
+        document.getElementById("lockSection").style.display = "none";
       } else {
-        alert("Wrong password! Pay ₹99 to get the password.");
+        alert("Incorrect password! Please pay ₹99 to get access.");
       }
     }
 
-    async function generatePDF() {
-      const { jsPDF } = window.jspdf;
-      const doc = new jsPDF();
-      doc.text("KIPU FITNESS MASTER COURSE", 10, 10);
-      doc.text("Visit site for full content", 10, 20);
-      doc.save("KipuFitnessGuide.pdf");
+    function downloadPDF() {
+      const element = document.querySelector(".container");
+      html2pdf().from(element).save("Kipu_Fitness_Guide.pdf");
     }
   </script>
+  <script src="https://rawcdn.githack.com/eKoopmans/html2pdf/0.9.2/dist/html2pdf.bundle.js"></script>
 </body>
 </html>
