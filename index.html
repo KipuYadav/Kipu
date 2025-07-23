@@ -1,77 +1,103 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kipu Fitness Guide</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background: white;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      color: #333;
+      max-width: 800px;
+      margin: auto;
     }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    ul {
-      padding-left: 20px;
+    h1, h2 {
+      color: #e91e63;
     }
     .lock-screen {
-      height: 100vh;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: #fff;
+      z-index: 999;
       display: flex;
-      justify-content: center;
       align-items: center;
-      background: #000;
-      color: white;
+      justify-content: center;
       flex-direction: column;
     }
     input[type="password"] {
       padding: 10px;
       font-size: 16px;
-      margin: 10px 0;
+      margin-top: 10px;
     }
     button {
       padding: 10px 20px;
-      background: #27ae60;
+      background: #e91e63;
       color: white;
       border: none;
+      margin-top: 10px;
       cursor: pointer;
     }
-    button:hover {
-      background: #219150;
+    a.download-btn {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .insta {
+      margin-top: 20px;
+    }
+    .insta a {
+      text-decoration: none;
+      background: #E1306C;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      display: inline-block;
     }
   </style>
 </head>
 <body>
-  <div class="lock-screen" id="lockScreen">
-    <h2>🔐 Enter Password to Unlock Kipu Fitness Guide</h2>
-    <input type="password" id="passwordInput" placeholder="Enter Password" />
-    <button onclick="unlockGuide()">Unlock</button>
-    <p id="errorMsg" style="color:red;"></p>
-  </div>  <div class="container" id="guideContent" style="display: none;">
-    <h1>🏋️‍♂️ Kipu Fitness Guide</h1>
-    <h2>📚 Table of Contents</h2>
-    <ol>
-      <li>Introduction</li>
-      <li>Benefits of Fitness</li>
-      <li>Fat vs Weight Gain</li>
-      <li>Weight Gain Diet Plan</li>
-      <li>Weight Loss Diet Plan</li>
-      <li>Home Workouts</li>
-      <li>Gym Workouts</li>
-      <li>Workout Timings (Beginner & Advanced)</li>
-      <li>Supplements & Tablets</li>
-      <li>Testosterone</li>
-      <li>Masturbation Awareness</li>
-      <li>Calorie Calculation</li>
-    </ol><h2>1. Introduction</h2>
+
+<div class="lock-screen" id="lockScreen">
+  <h2>Enter Password to Unlock</h2>
+  <input type="password" id="password" placeholder="Enter Password" />
+  <button onclick="unlock()">Unlock</button>
+  <p style="margin-top:10px;">Hint: Only for Paid Users (₹99) — UPI: <b>Q259634761@ybl</b></p>
+</div>
+
+<h1>🏋️‍♂️ KIPU FITNESS GUIDE BOOK</h1>
+<p><b>By Kipu Yadav</b></p>
+
+<a href="#" class="download-btn" onclick="window.print()">📄 Download PDF</a>
+
+<div class="insta">
+  <a href="https://instagram.com/kripalsultania" target="_blank">📸 Follow us on Instagram</a>
+</div>
+
+<hr>
+
+<h2>📚 Table of Contents</h2>
+<ol>
+  <li>Introduction</li>
+  <li>Benefits of Fitness</li>
+  <li>Fat vs Weight Gain</li>
+  <li>Weight Gain Diet Plan</li>
+  <li>Weight Loss Diet Plan</li>
+  <li>Home Workouts</li>
+  <li>Gym Workouts</li>
+  <li>Workout Timings (Beginner & Advanced)</li>
+  <li>Supplements & Tablets</li>
+  <li>Testosterone</li>
+  <li>Masturbation Awareness</li>
+  <li>Calorie Calculation</li>
+</ol>
+
+<h2>1. Introduction</h2>
 <p>Welcome to Kipu Fitness Guide! This course is built to transform your body, health, and mindset with practical knowledge. Whether you're just starting or want to level up, everything is covered here.</p>
 
 <h2>2. Benefits of Fitness</h2>
@@ -83,7 +109,9 @@
 </ul>
 
 <h2>3. Fat vs Weight Gain</h2>
-<p>Weight Gain includes fat, muscle, water, and food weight. Fat Gain only means gaining body fat. Our goal should always be lean muscle gain, not fat accumulation.</p>
+<p><b>Weight Gain</b> includes fat, muscle, water, and food weight.<br>
+<b>Fat Gain</b> only means gaining body fat.<br>
+✅ Our goal = Lean muscle gain, not fat accumulation.</p>
 
 <h2>4. Weight Gain Diet Plan</h2>
 <ul>
@@ -102,15 +130,15 @@
   <li>Snacks: Roasted chana or fruit</li>
   <li>Dinner: Soup + grilled paneer</li>
 </ul>
-<p>Drink water and avoid sugar-rich foods</p>
+<p>Drink water and avoid sugar-rich foods.</p>
 
 <h2>6. Home Workouts</h2>
-<p>Do 5 out of these 10 exercises per day:</p>
+<p>Do 5 out of these 10 exercises per day. Do 3 sets of each. Last set till failure.</p>
 <ul>
-  <li>Push-ups (3 sets of 15)</li>
-  <li>Jumping jacks (3 sets of 25)</li>
-  <li>Squats (3 sets of 20)</li>
-  <li>Lunges (3 sets each leg)</li>
+  <li>Push-ups</li>
+  <li>Jumping jacks</li>
+  <li>Squats</li>
+  <li>Lunges</li>
   <li>Mountain climbers</li>
   <li>Planks</li>
   <li>Burpees</li>
@@ -118,59 +146,58 @@
   <li>Superman</li>
   <li>Wall sit</li>
 </ul>
-<p>Train till muscle failure in last set. Rest 30-60 sec between sets.</p>
 
 <h2>7. Gym Workouts</h2>
-<p>Split training is best. Do 5 exercises per muscle:</p>
+<p><b>Weekly Split:</b></p>
 <ul>
-  <li><strong>Day 1:</strong> Chest + Triceps</li>
-  <li><strong>Day 2:</strong> Back + Biceps</li>
-  <li><strong>Day 3:</strong> Legs + Abs</li>
-  <li><strong>Day 4:</strong> Shoulders + Traps</li>
-  <li><strong>Day 5:</strong> Rest or cardio</li>
+  <li>Day 1: Chest + Triceps</li>
+  <li>Day 2: Back + Biceps</li>
+  <li>Day 3: Legs + Abs</li>
+  <li>Day 4: Shoulders + Traps</li>
+  <li>Day 5: Cardio or Rest</li>
 </ul>
-<p>Each exercise: 3-4 sets, 8-12 reps. Train till failure in the last set.</p>
+<p>Each exercise: 3-4 sets, 8-12 reps. Train till failure in last set.</p>
 
 <h2>8. Workout Timings (Beginner & Advanced)</h2>
-<p><strong>Best Time:</strong> Morning after light meal OR Evening before dinner.</p>
-<p><strong>Beginners:</strong> Train 1-2 muscle groups/day 4-5 times a week.</p>
-<p><strong>Advanced:</strong> Train 2 muscles/day 5-6 times/week + cardio.</p>
+<ul>
+  <li><b>Best Time:</b> Morning after light meal OR evening before dinner.</li>
+  <li><b>Beginners:</b> Train 1-2 muscles/day, 4-5 times/week.</li>
+  <li><b>Advanced:</b> Train 2 muscles/day, 5-6 times/week + cardio.</li>
+</ul>
 
 <h2>9. Supplements & Tablets</h2>
 <ul>
-  <li>Whey Protein: Muscle building</li>
-  <li>Creatine: Strength & pump</li>
-  <li>Multivitamin: Fill nutrition gaps</li>
-  <li>Omega-3: Heart & joints</li>
-  <li>Zinc, Magnesium, Vitamin D3: Boost testosterone</li>
+  <li><b>Whey Protein:</b> For muscle recovery & growth</li>
+  <li><b>Creatine:</b> Strength & performance</li>
+  <li><b>Multivitamin:</b> Fills nutritional gaps</li>
+  <li><b>Omega-3:</b> Heart & joint health</li>
+  <li><b>Zinc, Magnesium, D3:</b> Boost testosterone & muscle recovery</li>
 </ul>
 
 <h2>10. Testosterone</h2>
-<p>This hormone builds muscle, reduces fat, increases strength and libido. Sleep, lifting weights, and good fats (like nuts) help boost it.</p>
+<p>It's the key male hormone that supports muscle building, fat loss, energy, strength, and libido. Boost naturally via heavy lifting, deep sleep, zinc-rich foods, and healthy fats (nuts, seeds, avocado).</p>
 
 <h2>11. Masturbation Awareness</h2>
-<p>Doing it once a month is normal and safe. Avoid frequent masturbation as it may reduce energy and focus during training.</p>
+<p>Once a month is normal and safe. Avoid frequent masturbation — it can affect energy, testosterone, and focus during workouts.</p>
 
 <h2>12. Calorie Calculation</h2>
-<p>Calories = BMR × Activity Level</p>
 <ul>
-  <li>Use apps like HealthifyMe or MyFitnessPal</li>
-  <li>Eat 500 calories above maintenance to gain weight</li>
-  <li>Eat 500 below maintenance to lose fat</li>
+  <li>Calories = BMR × Activity Level</li>
+  <li>Apps: HealthifyMe, MyFitnessPal</li>
+  <li>To gain: Eat 500+ calories more</li>
+  <li>To lose: Eat 500- calories less</li>
 </ul>
 
-  </div>  <script>
-    function unlockGuide() {
-      const input = document.getElementById("passwordInput").value;
-      const guide = document.getElementById("guideContent");
-      const lock = document.getElementById("lockScreen");
-      const error = document.getElementById("errorMsg");
-      if (input === "K1PU2005") {
-        guide.style.display = "block";
-        lock.style.display = "none";
-      } else {
-        error.textContent = "Incorrect password. Please try again.";
-      }
+<script>
+  function unlock() {
+    const pass = document.getElementById("password").value;
+    if(pass === "K1PU2005") {
+      document.getElementById("lockScreen").style.display = "none";
+    } else {
+      alert("Incorrect password. Try again.");
     }
-  </script></body>
+  }
+</script>
+
+</body>
 </html>
